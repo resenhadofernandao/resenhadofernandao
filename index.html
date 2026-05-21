@@ -115,8 +115,32 @@ section{padding:5rem 2rem;position:relative;z-index:1}
 
 .bs-card{
   background:#0a0510;
+  padding:2rem;
   text-align:center;
-  padding:1.5rem;
+  position:relative;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.bs-card:hover{
+  background:#0d0d12;
+  transform:translateY(-6px);
+}
+
+.bs-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  background:var(--neon);
+  transform:scaleX(0);
+  transition:transform 0.3s;
+}
+
+.bs-card:hover::before{
+  transform:scaleX(1);
 }
 
 .bs-img{
@@ -130,12 +154,17 @@ section{padding:5rem 2rem;position:relative;z-index:1}
   width:100%;
   height:100%;
   object-fit:cover;
+  transition:transform 0.4s;
+}
+
+.bs-card:hover .bs-img img{
+  transform:scale(1.05);
 }
 
 .bs-name{
   font-family:'Bebas Neue',sans-serif;
   font-size:2rem;
-  color:#fff;
+  color:var(--branco);
 }
 .ingressos{background:#050508}
 .tickets-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
