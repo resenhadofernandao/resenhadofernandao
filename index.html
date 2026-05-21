@@ -77,17 +77,10 @@ section{padding:5rem 2rem;position:relative;z-index:1}
 .atracoes{background:linear-gradient(180deg,var(--preto) 0%,#0a0510 100%)}
 .djs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.06);margin-bottom:1px}
 .dj-card{background:var(--preto);padding:2.5rem 1.5rem;text-align:center;transition:background 0.3s;position:relative;overflow:hidden}
-  width:100%;
-  height:220px;
+ width:100%;
+  aspect-ratio:1/1;
   overflow:hidden;
   margin-bottom:1rem;
-}
-
-.dj-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
 }
 .dj-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--neon);transform:scaleX(0);transition:transform 0.3s}
 .dj-card:hover{background:#0d0d12}
