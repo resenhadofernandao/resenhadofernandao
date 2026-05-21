@@ -106,11 +106,37 @@ section{padding:5rem 2rem;position:relative;z-index:1}
 .dj-area-specs{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.2rem}
 .spec-tag{background:rgba(123,47,255,0.15);border:1px solid rgba(123,47,255,0.3);color:rgba(255,255,255,0.6);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.3rem 0.7rem}
 
-.backstage-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.06)}
-.bs-card{background:#0a0510;padding:2rem;text-align:center;border-top:1px solid rgba(123,47,255,0.3)}
-.bs-label{font-size:0.6rem;letter-spacing:0.3em;color:var(--roxo);text-transform:uppercase;margin-bottom:0.3rem}
-.bs-name{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--branco)}
+.backstage-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:1px;
+  background:rgba(255,255,255,0.06);
+}
 
+.bs-card{
+  background:#0a0510;
+  text-align:center;
+  padding:1.5rem;
+}
+
+.bs-img{
+  width:100%;
+  height:200px;
+  overflow:hidden;
+  margin-bottom:1rem;
+}
+
+.bs-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.bs-name{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:2rem;
+  color:#fff;
+}
 .ingressos{background:#050508}
 .tickets-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
 .ticket-group h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:0.15em;margin-bottom:1rem;display:flex;align-items:center;gap:0.8rem}
